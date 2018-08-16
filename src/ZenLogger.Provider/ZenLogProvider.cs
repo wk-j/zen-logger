@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using System;
 
 namespace ZenLogger.Provider {
 
@@ -8,8 +9,6 @@ namespace ZenLogger.Provider {
             return new ZenLogger(this, categoryName);
         }
 
-        public void Dispose() {
-
-        }
+        public void Dispose() { }
     }
 }

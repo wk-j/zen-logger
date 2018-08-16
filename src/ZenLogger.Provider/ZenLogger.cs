@@ -30,7 +30,7 @@ namespace ZenLogger.Provider {
             builder.Append("] ");
             builder.Append(category);
             builder.Append(": ");
-            builder.AppendLine(formatter(state, exception));
+            builder.Append(formatter(state, exception));
             Console.WriteLine(builder.ToString());
         }
     }
